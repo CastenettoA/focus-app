@@ -1,0 +1,33 @@
+// main style for the website
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #222;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #eee;
+}
+
+.container {
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+    
+        .article {
+            width: calc(100%/3 - 20px);
+            background: rgba(0,0,0, .2);
+            margin: 10px;
+            padding: 8px;
+            border-radius: 4px;
+
+            &:hover {
+                background: rgba(0,0,0, .1);  
+            }
+        }
+    }
+}
